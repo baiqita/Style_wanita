@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fashion"
+        android:textStyle="bold"
+        android:layout_marginLeft="90dp"
+        android:textColor="#09134A"
+        android:textSize="29sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btn_buka_model_celana"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:src="@drawable/jeans"
+            android:scaleType="fitCenter" />
+        <ImageButton
+            android:id="@+id/btn_buka_model_rok"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:src="@drawable/rok"
+            android:scaleType="fitCenter" />
+        <ImageButton
+            android:id="@+id/btn_buka_model_baju"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:src="@drawable/dress"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celana"
+            android:textSize="20dp"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rok"
+            android:textSize="20dp"
+            android:layout_marginLeft="70dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baju"
+            android:textSize="20dp"
+            android:layout_marginLeft="65dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="(Tekan gambar untuk membuka galeri)"
+        android:textStyle="italic"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="32dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="PindahToBiodata"
+        android:text="Profile"
+        style="@style/Widget.AppCompat.Button.Small"/>
+
+</LinearLayout>
